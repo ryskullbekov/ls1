@@ -56,4 +56,6 @@ dependencies {
     implementation "androidx.navigation:navigation-ui:$nav_version"
     //dots indicators
     implementation 'com.tbuonomo:dotsindicator:4.2'
+    //lottie
+    implementation "com.airbnb.android:lottie:4.2.1"
 }

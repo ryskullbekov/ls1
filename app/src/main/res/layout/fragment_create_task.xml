@@ -43,15 +43,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/task_ed"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Bacl to task list"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/add_btn"/>
 
 
     <Button
@@ -60,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:background="@drawable/rectangle_background_btn"
-        android:text="Add new task"
+        android:text="ADD NEW TASK"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/date_tv"/>
 
