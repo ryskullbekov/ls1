@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.DatePicker;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import com.example.ls1.Adapter.TaskAdapter;
 import com.example.ls1.Constant.Constants;
@@ -44,6 +45,7 @@ public class CreateTaskFragment extends BottomSheetDialogFragment implements Dat
         return binding.getRoot();
 
 
+
     }
 
 
@@ -54,15 +56,15 @@ public class CreateTaskFragment extends BottomSheetDialogFragment implements Dat
             @Override
             public void onClick(View v) {
                 userTask = binding.taskEd.getText().toString().trim();
-
 //                Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
                 Bundle bundle = new Bundle();
                 bundle.putString(Constants.USER_TASK, userTask);
                 Navigation.findNavController(requireView()).navigate(R.id.homeFragment, bundle);
-                Log.e("ttt", "user");
+                Toast.makeText(requireActivity(), "" + bundle.getString(Constants.USER_TASK, userTask), Toast.LENGTH_SHORT).show();
+               // Log.e("ttt", "user");
             }
         });
-        initClickers();
+       // initClickers();
     }
 
     private void initClickers() {

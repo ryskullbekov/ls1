@@ -34,16 +34,21 @@ public class HomeFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         binding.addFab.setOnClickListener(view1 -> {
-            Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
-            if (getArguments() != null) {
-                userTask = (String) getArguments().getSerializable(Constants.USER_TASK);
-                Log.e("ttt", "user" + userTask);
-            }
+//            Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
+//            if (getArguments() != null) {
+//                userTask = (String) getArguments().getSerializable(Constants.USER_TASK);
+//                Log.e("ttt", "user" + userTask);
+//            }
 
             binding.addFab.setOnClickListener(view11 -> {
                 Navigation.findNavController(requireView()).navigate(R.id.createTaskFragment);
             });
         });
+
+        if (getArguments() != null){
+            String name = getArguments().getString(Constants.USER_TASK);
+            binding.text.setText(name);
+        }
     }
 }
 

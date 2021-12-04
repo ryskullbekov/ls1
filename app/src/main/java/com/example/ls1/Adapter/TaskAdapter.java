@@ -1,6 +1,7 @@
 package com.example.ls1.Adapter;
 
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -14,6 +15,11 @@ import java.util.ArrayList;
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder> {
     ArrayList<TaskModel> list;
     ItemTaskBinding binding;
+
+
+    public TaskAdapter(ArrayList<TaskModel> list) {
+        this.list = list;
+    }
 
     @NonNull
     @Override
@@ -40,6 +46,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
             binding.taskTv.setText(model.getTask());
             binding.deadlineTv.setText(model.getDeadline());
             binding.repeatTv.setText(model.getDeadline());
+
         }
     }
 }
