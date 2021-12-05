@@ -42,10 +42,10 @@ public class BoardFragment extends Fragment {
                 case 1:
                     binding.description.setText("2");
                     binding.boardImage.setAnimation("time_lottie.json");
-
                     break;
                 case 2:
                     binding.description.setText("3");
+                    binding.boardImage.setAnimation("thanks_lottie.json");
                     break;
             }
         }

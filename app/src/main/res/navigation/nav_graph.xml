@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/onBoardFragment2">
+    app:startDestination="@id/singUpFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -33,5 +33,20 @@
         android:name="com.example.ls1.onBoard.OnBoardFragment"
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board" />
+    <fragment
+        android:id="@+id/singUpFragment"
+        android:name="com.example.ls1.auth.SingUpFragment"
+        android:label="fragment_sing_up"
+        tools:layout="@layout/fragment_sing_up" />
+    <fragment
+        android:id="@+id/getStartFragment"
+        android:name="com.example.ls1.auth.GetStartFragment"
+        android:label="fragment_get_start"
+        tools:layout="@layout/fragment_get_start" />
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.ls1.auth.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" />
 
 </navigation>
